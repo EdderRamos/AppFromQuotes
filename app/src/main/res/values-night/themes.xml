@@ -1,0 +1,33 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.AppFromQuotes" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!-- Light Mode -->
+    <!-- For Screen -->
+    <style name="Screen">
+        <item name="android:background">#000</item>
+    </style>
+    <!-- For Text -->
+    <style name="Text">
+        <item name="android:textColor">#fff</item>
+    </style>
+    <!-- For Button Floating -->
+    <style name="Button_Floating">
+        <item name="tint">#000</item>
+        <item name="backgroundTint">#fff</item>
+        <item name="srcCompat">@drawable/ic_night_24</item>
+    </style>
+
+</resources>
