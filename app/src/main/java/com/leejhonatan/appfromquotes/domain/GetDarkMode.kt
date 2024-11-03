@@ -12,7 +12,6 @@ class GetDarkMode @Inject constructor() {
         }else{
             isDarkMode = true
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-
         }
     }
 }

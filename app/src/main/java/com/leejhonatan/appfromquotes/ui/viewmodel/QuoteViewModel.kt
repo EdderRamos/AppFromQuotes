@@ -19,21 +19,22 @@ class QuoteViewModel @Inject constructor(
 ) : ViewModel() {
     val quoteModel = MutableLiveData<Quote>()
     val isLoading = MutableLiveData<Boolean>()
-    fun onCreate(){
+    fun onCreate() {
         viewModelScope.launch {
             isLoading.postValue(true)
             val result = getQuote()
-            if (!result.isNullOrEmpty()){
+            if (!result.isNullOrEmpty()) {
                 quoteModel.postValue(result[0])
                 isLoading.postValue(false)
             }
         }
     }
-    fun randomQuote(){
+
+    fun randomQuote() {
         viewModelScope.launch {
             isLoading.postValue(true)
             val quote = getRandom()
-            if(quote != null){
+            if (quote != null) {
                 quoteModel.postValue(quote)
             }
 
@@ -41,5 +42,6 @@ class QuoteViewModel @Inject constructor(
         }
 
     }
+
     fun darkMode() = getDarkMode()
 }
